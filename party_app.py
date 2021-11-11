@@ -39,13 +39,13 @@ Ced = st.checkbox('Ced')
 
 if jour == "31 Decembre":
     st.write('The party will start !')
-    image = Image.open(https://www.abritel.fr/location-vacances/p1922594)
+    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
     st.image(image, caption='La maison du bonheur pendant 2 jours')
     st.ballons()
 
 if jour == "1er Janvier":
     st.write('La recup...')
-    image = Image.open(https://parismatch.be/app/uploads/2018/02/hangover.jpg)
+    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
     st.image(image, caption='Putain... 2 jours')
 
 
