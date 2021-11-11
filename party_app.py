@@ -33,13 +33,13 @@ Dom = st.sidebar.checkbox('Dom')
 Ced = st.sidebar.checkbox('Ced')
 
 if jour == "31 Decembre":
-    st.write('The party will start !')
+    st.title('The party will start !')
 #    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
     st.image('https://www.abritel.fr/location-vacances/p1922594', caption='La maison du bonheur pendant 2 jours')
-    st.ballons()
+    st.balloons()
 
 if jour == "1er Janvier":
-    st.write('La recup...')
+    st.title('Dur la recup le lendemain...')
 #    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
 
