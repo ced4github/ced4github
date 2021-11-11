@@ -45,7 +45,7 @@ if jour == "1er Janvier":
 
 
 # Hiding the right menu
-st.markdown(""" <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style> """, unsafe_allow_html=True)
+#st.markdown(""" <style>
+##MainMenu {visibility: hidden;}
+#footer {visibility: hidden;}
+#</style> """, unsafe_allow_html=True)
