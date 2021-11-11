@@ -39,7 +39,7 @@ if jour == "31 Decembre":
     st.balloons()
 
 if jour == "1er Janvier":
-    st.title('Dur la recup le lendemain...')
+    st.title('Dur la recup du lendemain...')
 #    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
 
