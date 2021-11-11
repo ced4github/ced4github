@@ -21,27 +21,27 @@ jour = st.sidebar.selectbox(
     "So much to catch-up - Choose the day",
     ("31 Decembre", "1er Janvier")
 )
-Dada = st.checkbox('Dada')
-Rage = st.checkbox('Rage')
-Nours = st.checkbox('Nours')
-Funes = st.checkbox('Funes')
-Nico = st.checkbox('Nico')
-Math = st.checkbox('Math')
-Nonos = st.checkbox('Nonos')
-Lolo = st.checkbox('Lolo')
-Dom = st.checkbox('Dom')
-Ced = st.checkbox('Ced')
+Dada = st.sidebar.checkbox('Dada')
+Rage = st.sidebar.checkbox('Rage')
+Nours = st.sidebar.checkbox('Nours')
+Funes = st.sidebar.checkbox('Funes')
+Nico = st.sidebar.checkbox('Nico')
+Math = st.sidebar.checkbox('Math')
+Nonos = st.sidebar.checkbox('Nonos')
+Lolo = st.sidebar.checkbox('Lolo')
+Dom = st.sidebar.checkbox('Dom')
+Ced = st.sidebar.checkbox('Ced')
 
 if jour == "31 Decembre":
     st.write('The party will start !')
-    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
-    st.image(image, caption='La maison du bonheur pendant 2 jours')
+#    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
+    st.image('https://www.abritel.fr/location-vacances/p1922594', caption='La maison du bonheur pendant 2 jours')
     st.ballons()
 
 if jour == "1er Janvier":
     st.write('La recup...')
-    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
-    st.image(image, caption='Putain... 2 jours')
+#    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
+    st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
 
 
 # Hiding the right menu
