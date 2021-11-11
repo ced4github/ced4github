@@ -17,7 +17,6 @@ st.set_page_config(
      initial_sidebar_state="expanded",
      menu_items={
          'Get Help': 'Email: cedric_mallet@hotmail.com',
-         'About': "# This is an *extremely* cool app!"
      }
 )
 
