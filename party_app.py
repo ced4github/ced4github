@@ -14,11 +14,7 @@ st.set_page_config(
      page_title="Welcome to Ced",
      page_icon="🧊",
      layout="wide",
-     initial_sidebar_state="expanded",
-     menu_items={
-         'Get Help': 'Email: cedric_mallet@hotmail.com',
-     }
-)
+     initial_sidebar_state="expanded")
 
 st.sidebar.title('Party events')
 jour = st.sidebar.selectbox(
