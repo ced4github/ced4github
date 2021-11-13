@@ -61,7 +61,7 @@ st.markdown("""
 
     Stand-up apéro sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes    
 """)
-st.image('https://media.istockphoto.com/photos/festive-champagne-in-the-sparks-of-lights-picture-id953850184', caption='consommer avec modération...')
+st.image('https://cdn.shopify.com/s/files/1/1344/6283/products/NA250L_2000x.jpg?v=1548028588', caption='consommer avec modération...')
 st.subheader('au coeur du sujet...')
 st.markdown("""
 
@@ -80,6 +80,18 @@ st.markdown("""
 """)
 
 st.image('https://blackrivercheese.com/wp-content/uploads/2020/03/BRC_Recipes_Header_DessertBoard.jpg', caption='ok ca ressemblera pas a ca mais vous avez compris l\'idée')
+
+st.subheader('...et place à la disco Boris...')
+st.markdown("""
+
+    ca sera chaud !    
+
+    dans les T-shirts et les maillots ....
+
+""")
+
+st.image('https://cdn.deguisetoi.fr/media/blog_left_content/fra/5d1f2189b8537_soiree-a-theme-entre-amis-mode-d-emploi.jpg', caption='un peu cliché')
+st.image('https://s2.dmcdn.net/v/PkK711SeflLawZej9/x1080', caption='...peut-être plus comme ca')
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
