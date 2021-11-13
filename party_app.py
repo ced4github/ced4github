@@ -126,7 +126,7 @@ if jour == "Le coût":
     st.markdown('Pour obtenir davantage d\'information, merci de contacter Ced: cedric_mallet@hotmail.com')
 
 if jour == "Le lieu":
-    st.title('La villa "smartLodge de Chennevière sur Marne...')
+    st.title('La villa "smartLodge" de Chennevière sur Marne...')
     st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La villa')
 
     st.subheader('...la découverte du lieu...')
@@ -137,7 +137,7 @@ if jour == "Le lieu":
         on va devoir faire du groupir ....
 
     """)
-    st.components.iframe('https://www.abritel.fr/location-vacances/p1922594')
+    st.components..v1.iframe('https://www.abritel.fr/location-vacances/p1922594')
 
 hide_streamlit_style = """
             <style>
