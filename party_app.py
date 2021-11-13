@@ -45,9 +45,9 @@ styles = [
     dict(selector="caption", props=[("caption-side", "bottom")])
 ]
 
-st.sidebar.title('Party events description')
+st.sidebar.title('Passage à 2022')
 jour = st.sidebar.selectbox(
-    "So much to catch-up",
+    "Menu",
     ("31 Décembre", "1er Janvier","Le coût")
 )
 
@@ -134,7 +134,7 @@ if jour == "Le coût":
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
+#            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
