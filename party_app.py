@@ -10,7 +10,7 @@ import pandas as pd
 import os
 from PIL import Image
 import numpy as np
-from st_aggrid import AgGrid
+
 
 st.set_page_config(
      page_title="Welcome to Ced",
@@ -50,12 +50,14 @@ if jour == "cout":
 #    st.bar_chart(chart_data)
     st.bar_chart(df)
     with st.expander("Voir le detail en tableau"):
-        st.write("""
+        st.info("""
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022
         """)
-        st.dataframe(df)
-        AgGrid(df)
+        st.table(df.style.set_properties(**{'background-color': 'grey',
+        'color': 'black',
+        'border-color': 'blue'}))
+
 
 
 # Hiding the right menu
