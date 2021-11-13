@@ -10,6 +10,7 @@ import pandas as pd
 import os
 from PIL import Image
 import numpy as np
+import st_aggrid import AgGrid
 
 st.set_page_config(
      page_title="Welcome to Ced",
@@ -42,13 +43,19 @@ if jour == "cout":
         '31 Decembre': [563,637,356,637,489,178,311.5,623,489,489],
         '1er Janvier': [360,0,180,0,247,90,157,0,225,315],
         }).set_index('index')
-    st.dataframe(df)
 
 #    chart_data = pd.DataFrame(
 #    np.array(['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],[360,0,180,0,247.5,90,157.5,0,225,315]),
 #    columns=["clan", "31 Decembre", "1er Janvier"])
 #    st.bar_chart(chart_data)
     st.bar_chart(df)
+    with st.expander("Voir le detail en tableau"):
+        st.write("""
+        Le tableau reprend la cotisation a la teuf de l'année 2021...
+        ... et on va dire aussi 2022
+        """)
+        st.dataframe(df)
+        AgGrid(df)
 
 
 # Hiding the right menu
