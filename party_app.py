@@ -109,7 +109,7 @@ if jour == "Soirée du 31 Décembre":
 if jour == "Le 1er Janvier":
     st.title('Dur la recup du lendemain...')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
-    st.subheader('...et pour ceux qui auront survécus...')
+    st.subheader('...et pour ceux qui auront survécu...')
     st.markdown("""
 
         promenade et restauration allégée !    
