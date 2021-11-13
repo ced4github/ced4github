@@ -74,7 +74,7 @@ if jour == "Soirée du 31 Décembre":
     st.subheader('au coeur du sujet...')
     st.markdown("""
 
-        plats du terroir accompagnés de ses vins nationaux !    
+        Plats du terroir accompagnés de ses vins nationaux !    
     """)
 
     st.image('https://www.parisinfo.com/var/otcp/sites/images/media/1.-photos/04.-restauration-630-x-405/menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-thinkstock/10216908-1-fre-FR/Menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-Thinkstock.jpg')
@@ -82,7 +82,7 @@ if jour == "Soirée du 31 Décembre":
     st.subheader('pour faire rou...couler...')
     st.markdown("""
 
-        le frometon accompagné aussi de ses vins nationaux !    
+        Le frometon accompagné aussi de ses vins nationaux !    
 
         et des migniardises pour les gamines ....
 
@@ -93,9 +93,9 @@ if jour == "Soirée du 31 Décembre":
     st.subheader('...et place à la disco Boris...')
     st.markdown("""
 
-        ca sera chaud !    
+        Ca sera chaud !    
 
-        dans les T-shirts et les maillots ....
+        ....dans les T-shirts et les maillots :confetti_ball:
 
     """)
 
@@ -113,11 +113,14 @@ if jour == "Le 1er Janvier":
     st.markdown("""
 
         promenade et restauration allégée !    
+    """)
+    st.image('https://static1.terrafemina.com/articles/6/35/18/86/@/524149-11-remedes-anti-gueule-de-bois-qui-march-953x0-2.jpeg', caption='ca va le faire')
+    st.markdown("""
 
         enfin presque ....
 
     """)
-    st.image('https://static1.terrafemina.com/articles/6/35/18/86/@/524149-11-remedes-anti-gueule-de-bois-qui-march-953x0-2.jpeg', caption='ca va le faire')
+    st.image('https://cdn.vox-cdn.com/thumbor/LDguMoaLglKzWfDoScChJPJ6F5w=/0x0:8256x5504/2570x1446/filters:focal(3456x1020:4776x2340):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70017525/1235975361.0.jpg', caption='...une thématique en vue ?')
 
 if jour == "Le coût":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
