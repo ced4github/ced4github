@@ -137,7 +137,7 @@ if jour == "Le lieu":
         on va devoir faire du groupir ....
 
     """)
-    st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete')
+    st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete', height=900, scrolling=True)
 
 hide_streamlit_style = """
             <style>
