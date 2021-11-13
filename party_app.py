@@ -8,9 +8,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from PIL import Image
-import numpy as np
-
+import time
 
 st.set_page_config(
      page_title="Welcome to Ced",
@@ -48,14 +46,25 @@ styles = [
 st.sidebar.title('Passage à 2022')
 jour = st.sidebar.selectbox(
     "Menu",
-    ("31 Décembre", "1er Janvier","Le coût","Le lieu")
+    ("Le lieu","31 Décembre", "1er Janvier","Le coût")
 )
+
+if jour == "Le lieu":
+    st.title('La villa "SmartLodge" de Chennevière sur Marne...')
+    st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
+
+    st.subheader('...la découverte du lieu...')
+    st.markdown("""
+
+        12 chambres à partager !    
+
+        on va devoir faire du groupir ....
+
+    """)
+    st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete', height=900, scrolling=True)
 
 if jour == "31 Décembre":
     st.title('The party will start @6pm !')
-#    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
-    st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
-#    st.balloons()
     st.subheader('En apéritif...')
     st.markdown("""
 
@@ -93,6 +102,9 @@ if jour == "31 Décembre":
     st.image('https://cdn.deguisetoi.fr/media/blog_left_content/fra/5d1f2189b8537_soiree-a-theme-entre-amis-mode-d-emploi.jpg', caption='un peu cliché')
     st.image('https://c.tenor.com/DKVCnKDquKAAAAAM/old-dance-elderly.gif', caption='...peut-être plus comme ca')
     st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...et ca')
+    while True:
+        time.sleep(60)
+        st.balloons()
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
@@ -125,19 +137,6 @@ if jour == "Le coût":
         st.table(df.style.set_table_styles(styles).set_caption("Image by Author (Made by Cedric)"))
     st.markdown('Pour obtenir davantage d\'information, merci de contacter Ced: cedric_mallet@hotmail.com')
 
-if jour == "Le lieu":
-    st.title('La villa "smartLodge" de Chennevière sur Marne...')
-    st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La villa')
-
-    st.subheader('...la découverte du lieu...')
-    st.markdown("""
-
-        12 chambres à partager !    
-
-        on va devoir faire du groupir ....
-
-    """)
-    st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete', height=900, scrolling=True)
 
 hide_streamlit_style = """
             <style>
