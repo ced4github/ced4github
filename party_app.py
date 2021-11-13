@@ -16,12 +16,19 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
-st.sidebar.title('Party events')
+st.sidebar.title('Party events description')
 jour = st.sidebar.selectbox(
     "So much to catch-up - Choose the day",
     ("31 Decembre", "1er Janvier")
 )
-Dada = st.sidebar.checkbox('Dada')
+
+st.sidebar.title('Tout à un prix dans la life')
+jour_cout = st.sidebar.selectbox(
+    "Pour voir la répartition des coûts - Choose the day",
+    ("total","31 Decembre","1er Janvier")
+)
+
+'''Dada = st.sidebar.checkbox('Dada')
 Rage = st.sidebar.checkbox('Rage')
 Nours = st.sidebar.checkbox('Nours')
 Funes = st.sidebar.checkbox('Funes')
@@ -31,19 +38,40 @@ Nonos = st.sidebar.checkbox('Nonos')
 Lolo = st.sidebar.checkbox('Lolo')
 Dom = st.sidebar.checkbox('Dom')
 Ced = st.sidebar.checkbox('Ced')
+'''
+#construire le dataframe
+dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom","Ced"],
+    "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
+    "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
+    }
+df = pd.Dataframe(dico)
 
 if jour == "31 Decembre":
     st.title('The party will start !')
 #    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
     st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
-    st.balloons()
+#    st.balloons()
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
 #    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
 
+if jour_cout == "total":
+    st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
+    st.dataframe(df)
+'''
+if jour_cout == "31 Decembre":
+    st.title('THE réveillon so there is a premium !')
+    st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
 
+
+if jour_cout == "1er Janvier":
+    st.title('Dur la recup du lendemain...')
+#    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
+    st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
+
+'''
 # Hiding the right menu
 #st.markdown(""" <style>
 ##MainMenu {visibility: hidden;}
