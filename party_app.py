@@ -23,13 +23,6 @@ jour = st.sidebar.selectbox(
     ("31 Decembre", "1er Janvier","cout")
 )
 
-#construire le dataframe
-dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom","Ced"],
-    "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
-    "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
-    }
-df = pd.DataFrame(dico)
-
 if jour == "31 Decembre":
     st.title('The party will start !')
 #    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
@@ -44,10 +37,19 @@ if jour == "1er Janvier":
 if jour == "cout":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
 #    st.dataframe(df)
+    #construire le dataframe
+    dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom","Ced"],
+        "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
+        "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
+        }
+    df = pd.DataFrame(dico)
+
     chart_data = pd.DataFrame(
     np.random.randn(50, 3),
     columns=["a", "b", "c"])
     st.bar_chart(chart_data)
+    st.bar_chart(df)
+
 
 # Hiding the right menu
 #st.markdown(""" <style>
