@@ -18,6 +18,33 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
+styles = [
+    dict(selector="tr:hover",
+                props=[("background", "#f4f4f4")]),
+    dict(selector="th", props=[("color", "#fff"),
+                               ("border", "1px solid #eee"),
+                               ("padding", "12px 35px"),
+                               ("border-collapse", "collapse"),
+                               ("background", "#00cccc"),
+                               ("text-transform", "uppercase"),
+                               ("font-size", "18px")
+                               ]),
+    dict(selector="td", props=[("color", "#999"),
+                               ("border", "1px solid #eee"),
+                               ("padding", "12px 35px"),
+                               ("border-collapse", "collapse"),
+                               ("font-size", "15px")
+                               ]),
+    dict(selector="table", props=[
+                                    ("font-family" , 'Arial'),
+                                    ("margin" , "25px auto"),
+                                    ("border-collapse" , "collapse"),
+                                    ("border" , "1px solid #eee"),
+                                    ("border-bottom" , "2px solid #00cccc"),                                    
+                                      ]),
+    dict(selector="caption", props=[("caption-side", "bottom")])
+]
+
 st.sidebar.title('Party events description')
 jour = st.sidebar.selectbox(
     "So much to catch-up",
@@ -40,8 +67,8 @@ if jour == "cout":
     #construire le dataframe
     df = pd.DataFrame({
         'index': ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
-        '31 Decembre': [563,637,356,637,489,178,311.5,623,489,489],
-        '1er Janvier': [360,0,180,0,247,90,157,0,225,315],
+        '31 Decembre': [563,638,356,638,489,178,312,624,489,489],
+        '1er Janvier': [360,0,180,0,248,90,158,0,225,315],
         }).set_index('index')
 
 #    chart_data = pd.DataFrame(
@@ -54,9 +81,11 @@ if jour == "cout":
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022
         """)
-        st.table(df.style.set_properties(**{'background-color': 'grey',
-        'color': 'black',
-        'border-color': 'blue'}))
+        st.table(df.style.set_table_styles(styles).set_caption("Image by Author (Made by Cedric)"))
+
+#        st.table(df.style.set_properties(**{'background-color': 'grey',
+#        'color': 'black',
+#        'border-color': 'blue'}))
 
 
 
