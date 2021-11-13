@@ -91,12 +91,21 @@ st.markdown("""
 """)
 
 st.image('https://cdn.deguisetoi.fr/media/blog_left_content/fra/5d1f2189b8537_soiree-a-theme-entre-amis-mode-d-emploi.jpg', caption='un peu cliché')
-st.image('https://s2.dmcdn.net/v/PkK711SeflLawZej9/x1080', caption='...peut-être plus comme ca')
+st.image('https://c.tenor.com/DKVCnKDquKAAAAAM/old-dance-elderly.gif', caption='...peut-être plus comme ca')
+st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...et ca')
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
-#    image = Image.open('https://parismatch.be/app/uploads/2018/02/hangover.jpg')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
+    st.subheader('...et pour ceux qui auront survécus...')
+    st.markdown("""
+
+        promenade et restauration allégée !    
+
+        enfin presque ....
+
+    """)
+    st.image('https://static1.terrafemina.com/articles/6/35/18/86/@/524149-11-remedes-anti-gueule-de-bois-qui-march-953x0-2.jpeg', caption='ca va le faire')
 
 if jour == "cout":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
