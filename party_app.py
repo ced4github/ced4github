@@ -42,7 +42,7 @@ if jour == "cout":
         "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
         }
     df = pd.DataFrame(data=dico)
-    cols=["clan", "31 Decembre", "1er Janvier"])
+    cols=["clan", "31 Decembre", "1er Janvier"]
     st_ms = st.multiselect("Columns", df.columns.tolist(), default=cols)
     st.dataframe(df)
 
