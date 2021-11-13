@@ -36,13 +36,13 @@ if jour == "1er Janvier":
 
 if jour == "cout":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
-#    st.dataframe(df)
     #construire le dataframe
-    dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom","Ced"],
+    dico = {"clan": ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
         "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
         "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
         }
-    df = pd.DataFrame(dico)
+    df = pd.DataFrame(data=dico)
+    st.dataframe(df)
 
     chart_data = pd.DataFrame(
     np.random.randn(50, 3),
