@@ -2,7 +2,7 @@
 # Name - party_app.py
 # Author : Cedric MALLET - cedric_mallet@hotmail.com
 # Date created 11/11/2021
-# Date updated 11/11/2021
+# Date updated 13/11/2021
 # Description : WEB Application with streamlit
 
 import streamlit as st
@@ -43,7 +43,7 @@ styles = [
     dict(selector="caption", props=[("caption-side", "bottom")])
 ]
 
-st.sidebar.title('Passage à 2022')
+st.sidebar.title('Le passage à 2022')
 jour = st.sidebar.selectbox(
     "Menu",
     ("Le lieu","Soirée du 31 Décembre", "Le 1er Janvier","Le coût")
@@ -68,7 +68,7 @@ if jour == "Soirée du 31 Décembre":
     st.subheader('En apéritif...')
     st.markdown("""
 
-        Stand-up apéro sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes    
+        Stand-up apéro dancing sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes    
     """)
     st.image('https://cdn.shopify.com/s/files/1/1344/6283/products/NA250L_2000x.jpg?v=1548028588', caption='consommer avec modération...')
     st.subheader('au coeur du sujet...')
@@ -107,7 +107,7 @@ if jour == "Soirée du 31 Décembre":
         st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...ou ca')
 
 if jour == "Le 1er Janvier":
-    st.title('Dur la recup du lendemain...')
+    st.title('Dur la récup du lendemain...')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
     st.subheader('...et pour ceux qui auront survécu...')
     st.markdown("""
@@ -129,10 +129,10 @@ if jour == "Le coût":
         }).set_index('index')
 
     st.bar_chart(df)
-    with st.expander("Voir le detail en tableau"):
+    with st.expander("Voir le détail en tableau"):
         st.info("""
         Le tableau reprend la cotisation a la teuf de l'année 2021...
-        ... et on va dire aussi 2022
+        ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
         st.table(df.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
     st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
