@@ -48,7 +48,7 @@ styles = [
 st.sidebar.title('Passage à 2022')
 jour = st.sidebar.selectbox(
     "Menu",
-    ("31 Décembre", "1er Janvier","Le coût")
+    ("31 Décembre", "1er Janvier","Le coût","Le lieu")
 )
 
 if jour == "31 Décembre":
@@ -116,10 +116,6 @@ if jour == "Le coût":
         '1er Janvier': [360,0,180,0,248,90,158,0,225,315],
         }).set_index('index')
 
-#    chart_data = pd.DataFrame(
-#    np.array(['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],[360,0,180,0,247.5,90,157.5,0,225,315]),
-#    columns=["clan", "31 Decembre", "1er Janvier"])
-#    st.bar_chart(chart_data)
     st.bar_chart(df)
     with st.expander("Voir le detail en tableau"):
         st.info("""
@@ -127,10 +123,21 @@ if jour == "Le coût":
         ... et on va dire aussi 2022
         """)
         st.table(df.style.set_table_styles(styles).set_caption("Image by Author (Made by Cedric)"))
-#        st.table(df.style.set_properties(**{'background-color': 'grey',
-#        'color': 'black',
-#        'border-color': 'blue'}))
     st.markdown('Pour obtenir davantage d\'information, merci de contacter Ced: cedric_mallet@hotmail.com')
+
+if jour == "Le lieu":
+    st.title('La villa "smartLodge de Chennevière sur Marne...')
+    st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La villa')
+
+    st.subheader('...la découverte du lieu...')
+    st.markdown("""
+
+        12 chambres à partager !    
+
+        on va devoir faire du groupir ....
+
+    """)
+    st.components.iframe('https://www.abritel.fr/location-vacances/p1922594')
 
 hide_streamlit_style = """
             <style>
