@@ -102,9 +102,6 @@ if jour == "31 Décembre":
     st.image('https://cdn.deguisetoi.fr/media/blog_left_content/fra/5d1f2189b8537_soiree-a-theme-entre-amis-mode-d-emploi.jpg', caption='un peu cliché')
     st.image('https://c.tenor.com/DKVCnKDquKAAAAAM/old-dance-elderly.gif', caption='...peut-être plus comme ca')
     st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...et ca')
-    while True:
-        time.sleep(60)
-        st.balloons()
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
