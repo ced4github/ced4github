@@ -48,10 +48,10 @@ styles = [
 st.sidebar.title('Party events description')
 jour = st.sidebar.selectbox(
     "So much to catch-up",
-    ("31 Decembre", "1er Janvier","cout")
+    ("31 Décembre", "1er Janvier","Le coût")
 )
 
-if jour == "31 Decembre":
+if jour == "31 Décembre":
     st.title('The party will start @6pm !')
 #    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
     st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
@@ -107,7 +107,7 @@ if jour == "1er Janvier":
     """)
     st.image('https://static1.terrafemina.com/articles/6/35/18/86/@/524149-11-remedes-anti-gueule-de-bois-qui-march-953x0-2.jpeg', caption='ca va le faire')
 
-if jour == "cout":
+if jour == "Le coût":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
     #construire le dataframe
     df = pd.DataFrame({
@@ -130,9 +130,15 @@ if jour == "cout":
 #        st.table(df.style.set_properties(**{'background-color': 'grey',
 #        'color': 'black',
 #        'border-color': 'blue'}))
+    st.markdown('Pour obtenir davantage d\'information, merci de contacter Ced: cedric_mallet@hotmail.com')
 
-
-
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 # Hiding the right menu
 #st.markdown(""" <style>
 ##MainMenu {visibility: hidden;}
