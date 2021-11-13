@@ -45,7 +45,7 @@ if jour == "cout":
     st.dataframe(df)
 
     chart_data = pd.DataFrame(
-    np.array(['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],[360,0,180,0,247.5,90,157.5,0,225,315])
+    np.array(['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],[360,0,180,0,247.5,90,157.5,0,225,315]),
     columns=["clan", "31 Decembre", "1er Janvier"])
     st.bar_chart(chart_data)
 #    st.bar_chart(df)
