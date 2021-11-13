@@ -22,17 +22,6 @@ jour = st.sidebar.selectbox(
     ("31 Decembre", "1er Janvier","cout")
 )
 
-'''Dada = st.sidebar.checkbox('Dada')
-Rage = st.sidebar.checkbox('Rage')
-Nours = st.sidebar.checkbox('Nours')
-Funes = st.sidebar.checkbox('Funes')
-Nico = st.sidebar.checkbox('Nico')
-Math = st.sidebar.checkbox('Math')
-Nonos = st.sidebar.checkbox('Nonos')
-Lolo = st.sidebar.checkbox('Lolo')
-Dom = st.sidebar.checkbox('Dom')
-Ced = st.sidebar.checkbox('Ced')
-'''
 #construire le dataframe
 dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom","Ced"],
     "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
