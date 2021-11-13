@@ -46,7 +46,7 @@ styles = [
 st.sidebar.title('Passage à 2022')
 jour = st.sidebar.selectbox(
     "Menu",
-    ("Le lieu","31 Décembre", "1er Janvier","Le coût")
+    ("Le lieu","Soirée du 31 Décembre", "Le 1er Janvier","Le coût")
 )
 
 if jour == "Le lieu":
@@ -63,7 +63,7 @@ if jour == "Le lieu":
     """)
     st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete', height=900, scrolling=True)
 
-if jour == "31 Décembre":
+if jour == "Soirée du 31 Décembre":
     st.title('The party will start @6pm !')
     st.subheader('En apéritif...')
     st.markdown("""
@@ -106,7 +106,7 @@ if jour == "31 Décembre":
     with col2:
         st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...ou ca')
 
-if jour == "1er Janvier":
+if jour == "Le 1er Janvier":
     st.title('Dur la recup du lendemain...')
     st.image('https://parismatch.be/app/uploads/2018/02/hangover.jpg', caption='Putain... 2 jours')
     st.subheader('...et pour ceux qui auront survécus...')
