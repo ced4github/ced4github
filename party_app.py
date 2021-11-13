@@ -135,7 +135,7 @@ if jour == "Le coût":
         ... et on va dire aussi 2022
         """)
         st.table(df.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
-    st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced'</a>, unsafe_allow_html=True)
+    st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
 
 hide_streamlit_style = """
             <style>
