@@ -43,7 +43,7 @@ if jour == "1er Janvier":
 if jour == "cout":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
 #    st.dataframe(df)
-    st.bar_chart(df)
+    st.bar_chart(df, column=["clan","31 Decmbre","1er Janvier"])
 # Hiding the right menu
 #st.markdown(""" <style>
 ##MainMenu {visibility: hidden;}
