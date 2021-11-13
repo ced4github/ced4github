@@ -57,6 +57,9 @@ if jour == "Le lieu":
     st.markdown("""
 
         12 chambres à partager !    
+        * 2 au rez-de-chaussée
+        * 6 au premier étage
+        * 4 au troisième étage
 
         on va devoir faire du groupir ....
 
