@@ -52,10 +52,34 @@ jour = st.sidebar.selectbox(
 )
 
 if jour == "31 Decembre":
-    st.title('The party will start !')
+    st.title('The party will start @6pm !')
 #    image = Image.open('https://www.abritel.fr/location-vacances/p1922594')
     st.image('https://res.cloudinary.com/amenitiz/image/upload/w_500,dpr_auto,f_auto,q_auto:good/v1596118608/gnslsz8zmjo4fnpnhjnt.jpg', caption='La maison du bonheur pendant 2 jours')
 #    st.balloons()
+st.subheader('En apéritif...')
+st.markdown("""
+
+    Stand-up apéro sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes    
+""")
+st.image('https://media.istockphoto.com/photos/festive-champagne-in-the-sparks-of-lights-picture-id953850184', caption='consommer avec modération...')
+st.subheader('au coeur du sujet...')
+st.markdown("""
+
+    plats du terroir accompagnés de ses vins nationaux !    
+""")
+
+st.image('https://www.parisinfo.com/var/otcp/sites/images/media/1.-photos/04.-restauration-630-x-405/menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-thinkstock/10216908-1-fre-FR/Menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-Thinkstock.jpg')
+
+st.subheader('pour faire rou...couler...')
+st.markdown("""
+
+    le frometon accompagné aussi de ses vins nationaux !    
+
+    et des migniardises pour les gamines ....
+
+""")
+
+st.image('https://blackrivercheese.com/wp-content/uploads/2020/03/BRC_Recipes_Header_DessertBoard.jpg', caption='ok ca ressemblera pas a ca mais vous avez compris l\'idée')
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
@@ -82,7 +106,6 @@ if jour == "cout":
         ... et on va dire aussi 2022
         """)
         st.table(df.style.set_table_styles(styles).set_caption("Image by Author (Made by Cedric)"))
-
 #        st.table(df.style.set_properties(**{'background-color': 'grey',
 #        'color': 'black',
 #        'border-color': 'blue'}))
