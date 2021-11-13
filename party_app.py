@@ -44,7 +44,7 @@ dico = {"clan": ["Dada","Rage","Nours","Funes","Nico","Math","Nonos","Lolo","Dom
     "31 Decembre":[563.5,637.5,356,637.5,489.5,178,311.5,623,489.5,489.5],
     "1er Janvier":[360,0,180,0,247.5,90,157.5,0,225,315],
     }
-df = pd.Dataframe(dico)
+df = pd.DataFrame(dico)
 
 if jour == "31 Decembre":
     st.title('The party will start !')
