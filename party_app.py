@@ -61,10 +61,9 @@ if jour == "Le lieu":
         * 6 au premier étage
         * 4 au troisième étage
 
-        *(le détail ci-dessous, vous pouvez faire du scrolling intégré)*
-
         on va devoir faire du groupir ....
 
+        *(le détail ci-dessous, vous pouvez faire du scrolling intégré)*
     """)
     st.components.v1.iframe('https://www.smartlodge-chennevieres.fr/fr/page/la-propriete', height=900, scrolling=True)
 
@@ -117,7 +116,7 @@ if jour == "Le 1er Janvier":
     st.subheader('...et pour ceux qui auront survécu...')
     st.markdown("""
 
-        promenade et restauration allégée !    
+        Petite promenade en bord de Marne et restauration allégée !    
     """)
     st.image('https://static1.terrafemina.com/articles/6/35/18/86/@/524149-11-remedes-anti-gueule-de-bois-qui-march-953x0-2.jpeg', caption='ca va le faire')
     st.markdown("""
@@ -147,13 +146,8 @@ if jour == "Le coût":
 
 hide_streamlit_style = """
             <style>
-#            #MainMenu {visibility: hidden;}
+            #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
-# Hiding the right menu
-#st.markdown(""" <style>
-##MainMenu {visibility: hidden;}
-#footer {visibility: hidden;}
-#</style> """, unsafe_allow_html=True)
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
