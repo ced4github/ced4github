@@ -100,8 +100,9 @@ if jour == "31 Décembre":
     """)
 
     st.image('https://cdn.deguisetoi.fr/media/blog_left_content/fra/5d1f2189b8537_soiree-a-theme-entre-amis-mode-d-emploi.jpg', caption='un peu cliché')
-    st.image('https://c.tenor.com/DKVCnKDquKAAAAAM/old-dance-elderly.gif', caption='...peut-être plus comme ca')
-    st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...et ca')
+    col1, col2 = st.columns(2)
+    col1.st.image('https://c.tenor.com/DKVCnKDquKAAAAAM/old-dance-elderly.gif', caption='...peut-être plus comme ca')
+    col2.st.image('https://c.tenor.com/arL_1cVEX5UAAAAM/dancing-flossing.gif', caption='...ou ca')
 
 if jour == "1er Janvier":
     st.title('Dur la recup du lendemain...')
@@ -131,7 +132,7 @@ if jour == "Le coût":
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022
         """)
-        st.table(df.style.set_table_styles(styles).set_caption("Image by Author (Made by Cedric)"))
+        st.table(df.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
     st.markdown('Pour obtenir davantage d\'information, merci de contacter Ced: cedric_mallet@hotmail.com')
 
 
