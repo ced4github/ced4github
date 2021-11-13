@@ -61,6 +61,8 @@ if jour == "Le lieu":
         * 6 au premier étage
         * 4 au troisième étage
 
+        *(le détail ci-dessous, vous pouvez faire du scrolling intégré)*
+
         on va devoir faire du groupir ....
 
     """)
