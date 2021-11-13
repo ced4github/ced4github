@@ -10,7 +10,7 @@ import pandas as pd
 import os
 from PIL import Image
 import numpy as np
-import st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 st.set_page_config(
      page_title="Welcome to Ced",
