@@ -137,7 +137,7 @@ if jour == "Le lieu":
         on va devoir faire du groupir ....
 
     """)
-    st.components..v1.iframe('https://www.abritel.fr/location-vacances/p1922594')
+    st.components.v1.iframe('https://www.abritel.fr/location-vacances/p1922594')
 
 hide_streamlit_style = """
             <style>
