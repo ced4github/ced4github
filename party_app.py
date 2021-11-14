@@ -129,21 +129,34 @@ if jour == "Le 1er Janvier":
 if jour == "Le coût":
     st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
     #construire le dataframe
-    df = pd.DataFrame({
+    df1 = pd.DataFrame({
         'index': ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
         '31 Decembre': [563,638,356,638,489,178,312,624,489,489],
         '1er Janvier': [360,0,180,0,248,90,158,0,225,315],
         }).set_index('index')
 
-    st.bar_chart(df)
-    with st.expander("Voir le détail en tableau"):
+    st.bar_chart(df1)
+    with st.expander("Voir le détail des coûts"):
         st.info("""
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
-        st.warning("adult full price(~110/90 la nuit), ados .75 and kid .5")
-        st.table(df.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
+        st.warning("adult full price(~110/90 la nuit), ado .75 and kid .5")
+        st.table(df1.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
     st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
+
+    df2 = pd.DataFrame({
+        'index': ['Adultes','Ados girls','Ados boys','Kids girls','Kids boys'],
+        'Nb personnes': [18,4,4,3,2],
+        'Nb chambres': [9,1,1,1,1],
+        }).set_index('index')
+    st.bar_chart(df2)
+    with st.expander("Voir la répartition des chambres en nombre"):
+        st.info("""
+        Va falloir se serrer le premier soir pour les kids...
+        ... il y a aussi un bureau a voir...)
+        """)
+        st.table(df2.style.set_table_styles(styles).set_caption("Image by Ced..."))
 
 hide_streamlit_style = """
             <style>
