@@ -136,13 +136,12 @@ if jour == "Le coût":
         }).set_index('index')
 
     st.bar_chart(df)
-    with st.spinner("adult full price, ados .75 and kid .5"):
-        time.sleep(15)
     with st.expander("Voir le détail en tableau"):
         st.info("""
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
+        st.warning("adult full price(~110/90 la nuit), ados .75 and kid .5")
         st.table(df.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
     st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
 
