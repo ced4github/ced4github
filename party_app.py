@@ -150,13 +150,12 @@ if jour == "Le coût":
         'Nb personnes': [18,4,4,3,2],
         'Nb chambres': [9,1,1,1,1],
         }).set_index('index')
-    st.bar_chart(df2)
     with st.expander("Voir la répartition des chambres en nombre"):
-        st.info("""
-        Va falloir se serrer le premier soir pour les kids...
+        st.table(df2.style.set_table_styles(styles).set_caption("Image by Ced..."))
+        st.warning("""
+        1 chambre ou il falloir se serrer le premier soir pour les kids...
         ... il y a aussi un bureau a voir...)
         """)
-        st.table(df2.style.set_table_styles(styles).set_caption("Image by Ced..."))
 
 hide_streamlit_style = """
             <style>
