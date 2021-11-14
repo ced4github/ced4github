@@ -136,6 +136,8 @@ if jour == "Le coût":
         }).set_index('index')
 
     st.bar_chart(df)
+    with st.spinner("adult full price, ados .75 and kid .5"):
+        time.sleep(15)
     with st.expander("Voir le détail en tableau"):
         st.info("""
         Le tableau reprend la cotisation a la teuf de l'année 2021...
