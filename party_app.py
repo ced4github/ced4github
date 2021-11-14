@@ -141,9 +141,11 @@ if jour == "Le coût":
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
-        st.warning("adult full price(~110/90 la nuit), ado .75 and kid .5")
+        st.warning("""
+        ATTENTION Prix en fonction des participants, pour le moment on à 10 équipes en jeu.
+        Ceci correspond en moyenne à: adult full price(~110/90 la nuit), ado .75 and kid .5
+        """)
         st.table(df1.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
-    st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
 
     df2 = pd.DataFrame({
         'index': ['Adultes','Ados girls','Ados boys','Kids girls','Kids boys'],
@@ -153,9 +155,11 @@ if jour == "Le coût":
     with st.expander("Voir la répartition des chambres en nombre"):
         st.table(df2.style.set_table_styles(styles).set_caption("Image by Ced..."))
         st.warning("""
-        1 chambre ou il falloir se serrer le premier soir pour les kids...
+        1 chambre ou il va falloir se serrer le premier soir pour les kids (et peut-etre 3 filles ados en plus)...
         ... il y a aussi un bureau a voir...)
         """)
+
+    st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
 
 hide_streamlit_style = """
             <style>
