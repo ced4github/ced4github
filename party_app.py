@@ -150,7 +150,7 @@ if jour == "Le coût":
 
     df2 = pd.DataFrame({
         'index': ['Adultes','Ados girls','Ados boys','Kids girls','Kids boys'],
-        'Nb personnes': [18,4,4,3,2],
+        'Nb personnes': [18,4,3,3,3],
         'Nb chambres': [9,1,1,1,1],
         }).set_index('index')
     with st.expander("Voir la répartition des chambres en nombre"):
