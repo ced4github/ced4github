@@ -142,8 +142,9 @@ if jour == "Le coût":
         ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
         st.warning("""
-        ATTENTION Prix en fonction des participants, pour le moment on à 10 équipes en jeu.
-        Ceci correspond en moyenne à: adult full price(~110/90 la nuit), ado .75 and kid .5
+        ATTENTION Prix en fonction des participants, pour le moment on joue avec 10 équipes en piste.
+
+        Ceci correspond en moyenne à ~170EUR - 1er soir avec bouffe et la literie(adulte full price), ado .75 and kid .5
         """)
         st.table(df1.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
 
