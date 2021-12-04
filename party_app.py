@@ -127,7 +127,7 @@ if jour == "Le 1er Janvier":
     st.image('https://cdn.vox-cdn.com/thumbor/LDguMoaLglKzWfDoScChJPJ6F5w=/0x0:8256x5504/2570x1446/filters:focal(3456x1020:4776x2340):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70017525/1235975361.0.jpg', caption='...une thématique en vue ?')
 
 if jour == "Le coût":
-    st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon via un algorithme intelligent... comme moi !')
+    st.title('Les frais sont partagés et un premium est appliqué le soir du réveillon (bouffe du réveillon inclue) via un algorithme intelligent... comme moi !')
     #construire le dataframe
     df1 = pd.DataFrame({
         'index': ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
@@ -135,6 +135,15 @@ if jour == "Le coût":
         '1er Janvier': [360,0,180,0,248,90,158,0,225,315],
         }).set_index('index')
 
+    df1b = pd.DataFrame({
+        'index': ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
+        '31 Decembre': [537.5,607.5,340,607.5,467.5,340,297.5,537.5,467.5,467.5],
+        '1er Janvier': [368,0,184,0,253,184,161,0,230,322],
+        }).set_index('index')
+
+    st.subheader("New cost - based on confirmed attendees")
+    st.bar_chart(df1b)
+    st.subheader("Previous cost")
     st.bar_chart(df1)
     with st.expander("Voir le détail des coûts"):
         st.info("""
@@ -146,11 +155,11 @@ if jour == "Le coût":
 
         Ceci correspond en moyenne à ~170EUR - 1er soir avec bouffe et la literie(adulte full price), ado .75 and kid .5
         """)
-        st.table(df1.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
+        st.table(df1b.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
 
     df2 = pd.DataFrame({
         'index': ['Adultes','Ados girls','Ados boys','Kids girls','Kids boys'],
-        'Nb personnes': [18,4,3,3,3],
+        'Nb personnes': [19,4,3,3,3],
         'Nb chambres': [9,1,1,1,1],
         }).set_index('index')
     with st.expander("Voir la répartition des chambres en nombre"):
