@@ -165,8 +165,20 @@ if jour == "Le coût":
     with st.expander("Voir la répartition des chambres en nombre"):
         st.table(df2.style.set_table_styles(styles).set_caption("Image by Ced..."))
         st.warning("""
-        1 chambre ou il va falloir se serrer le premier soir pour les kids (et peut-etre 3 filles ados en plus)...
-        ... il y a aussi un bureau a voir...)
+        ***Rez-de-chaussée***
+        - Les kids Boys vont avoir 1 chambre avec 1 matelas simple à ajouter
+        - Les 3 Ados boys squattent le bureau à amenager avec 1 matelas double et 1 matelas simple
+        - 1 chambre Adulte
+        - Salon canapé pour 2 gardiens qui devront monter la garde
+
+        ***1er étage***
+        - 6 chambres adultes
+
+        ***2éme étage***
+        - 2 chambres adultes
+        - Les Kids Girls vont avoir 1 chambre avec 1 matelas simple à ajouter
+        - Les Ados Girls vont avoir 1 chambres avec 2 matelas simples à ajouter
+
         """)
 
     st.markdown('<a href="mailto:cedric_mallet@hotmail.com">Pour obtenir davantage d\'information, merci de contacter Ced</a>', unsafe_allow_html=True)
