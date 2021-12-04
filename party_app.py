@@ -72,13 +72,17 @@ if jour == "Soirée du 31 Décembre":
     st.subheader('En apéritif...')
     st.markdown("""
 
-        Stand-up apéro dancing sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes    
+        Stand-up apéro dancing sur lit de petits fours accompagnés de ses cocktails maison et champagne pour les intimes
+        - Bon *l'alcool sera gérée par nous-même* et on divisera ensuite 
+        
+
     """)
     st.image('https://cdn.shopify.com/s/files/1/1344/6283/products/NA250L_2000x.jpg?v=1548028588', caption='consommer avec modération...')
     st.subheader('au coeur du sujet...')
     st.markdown("""
 
-        Plats du terroir accompagnés de ses vins nationaux !    
+        Plats du terroir accompagnés de ses vins nationaux ! 
+        - La encore *l'alcool est en gestion interne*   
     """)
 
     st.image('https://www.parisinfo.com/var/otcp/sites/images/media/1.-photos/04.-restauration-630-x-405/menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-thinkstock/10216908-1-fre-FR/Menu-sp%C3%A9cialit%C3%A9s-fran%C3%A7aises-%7C-630x405-%7C-%C2%A9-Thinkstock.jpg')
