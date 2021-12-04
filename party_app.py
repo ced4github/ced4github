@@ -137,7 +137,7 @@ if jour == "Le coût":
 
     df1b = pd.DataFrame({
         'index': ['Dada','Rage','Nours','Funes','Nico','Math','Nonos','Lolo','Dom','Ced'],
-        '31 Decembre': [537.5,607.5,340,607.5,467.5,340,297.5,537.5,467.5,467.5],
+        '31 Decembre': [537,608,340,607,468,340,297,538,467,467],
         '1er Janvier': [368,0,184,0,253,184,161,0,230,322],
         }).set_index('index')
 
