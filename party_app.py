@@ -169,7 +169,7 @@ if jour == "Le coût":
         - Les kids Boys vont avoir 1 chambre avec 1 matelas simple à ajouter
         - Les 3 Ados boys squattent le bureau à amenager avec 1 matelas double et 1 matelas simple
         - 1 chambre Adulte
-        - Salon canapé pour 2 gardiens qui devront monter la garde
+        - Salon 2 canapés pour 2 gardiens qui devront monter la garde
 
         ***1er étage***
         - 6 chambres adultes
@@ -177,7 +177,7 @@ if jour == "Le coût":
         ***2éme étage***
         - 2 chambres adultes
         - Les Kids Girls vont avoir 1 chambre avec 1 matelas simple à ajouter
-        - Les Ados Girls vont avoir 1 chambres avec 2 matelas simples à ajouter
+        - Les Ados Girls vont avoir 1 chambre avec 2 matelas simples à ajouter
 
         """)
 
