@@ -154,18 +154,21 @@ if jour == "Le coût":
         Le tableau reprend la cotisation a la teuf de l'année 2021...
         ... et on va dire aussi 2022 (étant donné que cela se termine le 2 Janvier)
         """)
+        st.subheader("Lodging cost")
         st.warning("""
         - 31 décembre: Ceci correspond à 115EUR (adulte full price), ado .75 and kid .5
         - 1er janvier: Ceci correspond à 94EUR (adulte full price), ado .75 and kid .5
         """)
         st.table(dflogement.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
-        st.info("""
+        st.subheader("Bouffe cost")
+        st.warning("""
         - 31 décembre: Ceci correspond à 60EUR (adulte full price), ado .75 and kid .5
         - 1er janvier: Ceci correspond à 40EUR (adulte full price), ado .75 and kid .5
         """)
         st.table(dfbouffe.style.set_table_styles(styles).set_caption("Image by Cedric le magnifi..."))
+        
 if jour == "Le couchage":
-    st.title('Les lits sont désormais répartis avec des chambres enfants/ados et les chambres adultes - Pour ceux qui se levent le 1er - pas de Rez-de chaussée)!')
+    st.title('Les lits sont désormais répartis avec des chambres enfants/ados et les chambres adultes (Pour ceux qui se levent le 1er - pas de Rez-de chaussée)!')
     st.warning("""
         Il faut des matelas supplémentaires comme suivant:
         - matelas 2 places: Nonos amène
